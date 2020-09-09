@@ -3,7 +3,6 @@ import {
   BrowserRouter as Router,
   Link,
   Route,
-  Switch,
 } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar'
