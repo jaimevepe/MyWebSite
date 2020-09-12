@@ -58,11 +58,11 @@ class Contact extends React.Component {
 
     render(){
         return(
-            <div>
+            <div style={{marginBottom: '200px'}}>
                 <Hero title={this.props.title} />
 
                 <Content>
-                    <Form onSubmit={this.handleSubmit}>
+                    <Form onSubmit={this.handleSubmit} style={{maxWidth: '800px'}}>
 
                         <Form.Group >
                             <Form.Label htmlFor="full-name" >Full Name</Form.Label>
