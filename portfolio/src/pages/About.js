@@ -4,7 +4,7 @@ import Content from '../components/Content';
 
 function About(props) {
     return(
-        <div>
+        <div style={{marginBottom: '400px'}}>
             <Hero title={props.title} />
             <Content>
                 <p>Hello, my name is Jaime. I'm a full stack developer with experience in ReactJS, Express JS, Node JS, PostgreSQL and Mongo DB</p>
