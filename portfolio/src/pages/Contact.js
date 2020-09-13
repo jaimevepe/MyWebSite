@@ -11,7 +11,7 @@ class Contact extends React.Component {
             name: '',
             email: '',
             message: '',
-            disabled: '',
+            disabled: false,
             emailSent: null
         }
     }
@@ -33,7 +33,7 @@ class Contact extends React.Component {
             disabled: true,
         });
 
-        axios.post('/api/email', this.state)
+        axios.post('http://localhost:3000/api/email', this.state)
             .then(res => {
                 if (res.data.success) {
                     this.setState({
