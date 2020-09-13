@@ -9,7 +9,7 @@ const { send } = require('@sendgrid/mail');
 
 const app = express();
 
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 6000;
 
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -30,7 +30,7 @@ app.get('/api', (req, res, next) => {
     res.send('API status: Running')
 })
 
-app.post('/api/email', (req, res ,next) => {
+app.post('http://localhost:3000/api/email', (req, res ,next) => {
     sendGrid.setApiKey(`${SENDGRID_API_KEY}`);
     const msg = {
         to: 'jaimevepe@gmail.com',
