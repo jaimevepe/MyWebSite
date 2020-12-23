@@ -1,0 +1,25 @@
+Merge branch 'master' of https://github.com/jaimevepe/MyWedSite
+#
+# It looks like you may be committing a merge.
+# If this is not correct, please remove the file
+#	.git/MERGE_HEAD
+# and try again.
+
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch master
+# Your branch and 'origin/master' have diverged,
+# and have 23 and 23 different commits each, respectively.
+#   (use "git pull" to merge the remote branch into yours)
+#
+# Last commands done (5 commands done):
+#    exec git commit --amend --reset-author -CHEAD
+#    pick 9158661 Fnished setting up sendGrid, email wont send
+# Next commands to do (7 remaining commands):
+#    exec git commit --amend --reset-author -CHEAD
+#    pick e7ad766 Added margin to about and contact to fix footer
+
+# All conflicts fixed but you are still merging.
+#
