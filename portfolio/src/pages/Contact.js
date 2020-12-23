@@ -33,7 +33,11 @@ class Contact extends React.Component {
             disabled: true,
         });
 
+<<<<<<< HEAD
         axios.post('http://localhost:3000/api/email', this.state)
+=======
+        axios.post('/api/email', this.state)
+>>>>>>> 9158661... Fnished setting up sendGrid, email wont send
             .then(res => {
                 if (res.data.success) {
                     this.setState({
