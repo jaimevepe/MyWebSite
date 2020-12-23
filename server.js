@@ -2,10 +2,14 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 
+<<<<<<< HEAD
 const MyApi = process.env.SENDGRID_API_KEY;
 
 const sendGrid = require('@sendgrid/mail');
 const { send } = require('@sendgrid/mail');
+=======
+const sendGrid = require('@sendgrid/mail');
+>>>>>>> ed0cc41... Started working on server, added body-parser and cors and got the route to /api going
 
 const app = express();
 
@@ -47,12 +51,32 @@ app.post('http://localhost:3000/api/email', (req, res ,next) => {
         })
         .catch(err => {
 
+<<<<<<< HEAD
             console.log("error: ", err)
             res.status(401).json({
                 success: false
             })
 
         })
+=======
+// parse application/x-www-form-urlencoded
+app.use(bodyParser.urlencoded({ extended: false }));
+// parse application/json
+app.use(bodyParser.json());
+
+app.use(cors());
+
+//Headers that will be sending back
+app.use((req, res, next) => {
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, PATCH, DELETE');
+    res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+    next();
+})
+
+app.get('/api', (req, res, next) => {
+    res.send('API status: Running')
+>>>>>>> ed0cc41... Started working on server, added body-parser and cors and got the route to /api going
 })
 
 app.listen(port, () => {
